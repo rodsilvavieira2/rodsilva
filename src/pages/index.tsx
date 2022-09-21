@@ -22,6 +22,7 @@ import { CvDownloadBtn, ProjectCard } from "@components";
 
 const PresentationSection: React.FC = () => (
   <Flex
+    id="presentation"
     as="section"
     alignItems="center"
     h="calc(100vh - 6rem)"

@@ -24,8 +24,8 @@ export const MobileMenu: React.FC = () => {
 
   const links = whitId([
     {
-      label: "Home",
-      link: "/",
+      label: "Apresentação",
+      link: "/#presentation",
     },
 
     {
