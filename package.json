@@ -1,7 +1,20 @@
 {
   "name": "rodsilva",
   "version": "0.1.0",
-  "private": true,
+  "author": {
+    "name": "Rodrigo Silva",
+    "email": "rodsilvavieira@gmail.com"
+  },
+  "private": false,
+  "license": "MIT",
+  "description": "my web resume site",
+  "keywords": [
+    "next.js",
+    "chakra-ui",
+    "framer-motion",
+    "react-icons",
+    "phosphor-icons"
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",
