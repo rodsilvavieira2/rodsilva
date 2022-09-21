@@ -1,3 +1,69 @@
 {
-  "extends": "next/core-web-vitals"
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "node": true
+    },
+    "extends": [
+        "plugin:react/recommended",
+        "standard-with-typescript",
+        "plugin:@typescript-eslint/recommended",
+        "next/core-web-vitals",
+        "prettier",
+        "plugin:prettier/recommended"
+    ],
+    "ignorePatterns": ["src/**/*.test.ts", "*.d.ts", "*.js", "node_modules", "public"],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": "latest",
+        "sourceType": "module",
+        "project": [
+            "tsconfig.json"
+        ]
+    },
+    "plugins": [
+        "react",
+        "prettier",
+        "eslint-plugin-import-helpers"
+    ],
+    "rules": {
+        "no-use-before-define": "off",
+        "react/prop-types": "off",
+        "react/jsx-no-bind": "off",
+        "no-underscore-dangle": "off",
+        "react/require-default-props": "off",
+        "no-param-reassign": "off",
+        "react/jsx-props-no-spreading": "off",
+        "react/function-component-definition": "off",
+        "import/no-unresolved": "off",
+        "import/extensions": "off",
+        "react/react-in-jsx-scope": "off",
+        "import/prefer-default-export": "off",
+        "react/jsx-filename-extension": "off",
+        "import-helpers/order-imports": [
+            "warn",
+            {
+                "newlinesBetween": "always",
+                "groups": [
+                    "module",
+                    "/^@/",
+                    [
+                        "parent",
+                        "sibling",
+                        "index"
+                    ]
+                ],
+                "alphabetize": {
+                    "order": "asc",
+                    "ignoreCase": true
+                }
+            }
+        ],
+        "import/no-extraneous-dependencies": "off",
+        "@typescript-eslint/no-explicit-any": "off",
+        "@typescript-eslint/strict-boolean-expressions": "off"
+    }
 }
