@@ -9,7 +9,6 @@ export * from "./html-dev-icon";
 export * from "./javascript-dev-icon";
 export * from "./jest-dev-icon";
 export * from "./linux-dev-icon";
-export * from "./markdown-dev-icon";
 export * from "./nestjs-dev-icon";
 export * from "./nextjs-dev-icon";
 export * from "./node-dev-icon";
